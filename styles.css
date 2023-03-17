@@ -293,7 +293,7 @@ p{
     color: #FFF;
 }
 
-@media screen and (min-width: 375px) and (max-width:480px) {
+@media screen and (min-width: 375px) and (max-width:1000px) {
     #tudao {
         max-width: 100%;
         display: flex;
