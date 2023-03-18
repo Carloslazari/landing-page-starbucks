@@ -160,6 +160,11 @@ h3{
     display: flex;
 }
 
+container{
+    display: flex;
+    justify-content: center ;
+}
+
 .produtos{
     width: 300px;
     border: 3px solid #036635;
@@ -292,26 +297,26 @@ p{
     color: #FFF;
 }
 
-@media screen and (min-width: 375px) and (max-width:1000px) {
-    #tudao {
-        max-width: 100%;
+@media screen and (min-width: 320px) and (max-width:1000px) {
+   container{
+    flex-direction: column;
+   }
+    #conteiner{
         display: flex;
         flex-direction: column;
-    }
-    #all{
-        display: flex;
-        flex-direction: column;
+        margin-left: -20px;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-        margin-left: -22px;
     }
+    
 
     footer{
        width: 100%;
        margin-left: 0;
     
     }
+
 iframe{
     width: 360px;
 }
@@ -329,8 +334,8 @@ header {
     }
 
     .logo1{
-        margin-left: 40px;
-        margin-top: 10px;
+        margin-left: 100px;
+
     }
 
     ul {
@@ -345,4 +350,5 @@ header {
 .grid{
     width: 94%;
 }
+.icon{ width: 102px;}
 }
