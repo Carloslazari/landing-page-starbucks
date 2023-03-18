@@ -1,317 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-<body>
+main{
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #0a8c4b;
+}
 
-    <main>
-<div class="header">
-        <header>
+body{
+    width: 100%;
+}
 
-            
-            <img class="logo1" src="https://logodownload.org/wp-content/uploads/2017/10/starbucks-logo-6.png">
+.header{
+    width: 100%;
 
-            <nav>
+}
 
-
-                <ul class="nav-bar">
-
-                    <li><a href="#btn">Quem somos</a></li>
-
-                    <li><a href="#video">Como trabalhamos</a></li>
-
-                    <li><a href="#conteiner">Produtos</a></li>
-
-                </ul>
-
-            </nav>
-
-        </header>
-
-    </div>
-
-        <h1> Insira seu e-mail para receber mais informação</h1>
-
-        <form>
-
-            <div class="input">
-
-            <input id="input" type="email" placeholder="insira seu email" required>
-
-<br>
-
-            <button id="btn" class="button" type="submit">Get started</button>
-
-        </div>
-
-        </form> 
-
-        <section class="conteudo">
-                                                                                         <!--GRID 1-->
-            <div class="grid">
-
-               <div class="icon"> 
-
-                <img class="cafe" id="cafe" src="https://raw.githubusercontent.com/Carloslazari/landing-page-starbucks/main/imagens/grao-de-cafe.png" >
-                
-            </div>
-
-        <div id="text">
-
-            <div class="text">
-
-                <h2 class="subtitulo">Os Melhores Grãos no seu Copo.</h2>
-                <p class="paragrafo-grid">Antes de chegar à sua chávena, o seu café faz uma jornada composta por várias etapas. Todas essas etapas têm impacto sobre os grãos, incluindo a região e o clima onde são cultivados.</p>
-            </div><!--fechamento da class text-->
-            
-        </div><!--fechamento da div id text -->
-
-            </div>
-
-                                                                                         <!--GRID 2-->
-
-            <div class="grid">
-
-                <div class="icon"> 
- 
-                 <img  id="cafe" src="https://raw.githubusercontent.com/Carloslazari/landing-page-starbucks/main/imagens/plantar.png" >
-                 
-             </div>
- 
-         <div id="text">
- 
-             <div class="text">
- 
-                 <h2 class="subtitulo">Um conjunto de normas éticas.</h2>
-                 <p class="paragrafo-grid">Esse programa de verificação mede as fazendas em relação a critérios de qualidade, econômicos, sociais e ambientais, todos concebidos para promover 
-                    práticas de cultivo de café transparentes, lucrativas e sustentáveis, ao mesmo tempo que protege o bem-estar dos cafeicultores, das suas comunidades e do nosso planeta.</p>
-             </div><!--fechamento da class text-->
-             
-         </div><!--fechamento da div id text -->
- 
-             </div>
-
-                                                                                        <!--GRID 3-->
-             <div class="grid">
-
-                <div class="icon"> 
- 
-                 <img  id="cafe" src="https://raw.githubusercontent.com/Carloslazari/landing-page-starbucks/main/imagens/xicara-de-cafe.png" >
-                 
-             </div>
- 
-         <div id="text">
- 
-             <div class="text">
- 
-                 <h2 class="subtitulo">Que Tal Provar um café agora</h2>
-                 <p   class="paragrafo-grid">Muitas variáveis ​​afetam o sabor do café: onde o café é cultivado, que tipo de café é cultivado, como o café é cultivado, como a fruta é removida do grão, como o café é misturado e torrado e como o café é preparado. E esses são apenas alguns dos fatores. Quer saber como fazer uma degustação de café?
-                     Vamos explorar o gosto e suas multiplas dimensões. Uma coisa é certa - aprofundar a sua compreensão do sabor é uma jornada gratificante.</p>
-             </div><!--fechamento da class text-->
-             
-         </div><!--fechamento da div id text -->
- 
-             </div>
-        
-         <div id="video">
-
-            <iframe width="900" height="506" src="https://www.youtube.com/embed/-Xrdx8pDPj8" title="STARBUCKS :: Saboreie Cada Pausa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        </div>
-
-        </section>
-
-        <div id="all">
-
-<div class="tudasso">
-
-
-        
-<div id="tudao">
-
-    <div class="tudo">
-
-        <div id="conteiner">
-
-            <div class ="produtos">
+header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color:#fff;
+    border-radius: 5px;
+    border-bottom: 5px solid #113911;
     
-                <div class="name">
-    
-                 <h3>Starbucks® Caffè Verona™ Torrado</h3>
-    
-                    <img src="https://www.starbucksathome.com/br/media/catalog/product/cache/b90b8b710d5a319a644d2039872a6859/m/i/microsoftteams-image_2_.png">
-        
-    
-            </div>
-          
-    
-                <div class="descricao">
-    
-                    <ol>
-    
-                        <li>Torrado Moído | Torra Escura</li>
-    
-    
-                    </ol>
-    
-                </div>
-    
-             <div class="comprar">
-    
-                </div class="button1">
-    
-                  <a href="#" class="button1">Comprar</a>
-                  <div class="preco">
-    
-                    <p class="preco" ><span>$ 29,39</span>
-                        R$ 22,04</p>
-    
-                </div>
-                  
-    
-              </div>
-    
-            </div>
-    
-            </div>
+}
+
+.nav{
+    margin-left: 20px;
+}
 
 
 
-    <div id="conteiner">
+.logo1{
+    display: flex;
+    margin-left: 70px;
+    width: 5vh;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
 
-        <div class ="produtos">
+ul{
+    display: flex;
+    margin-right: 100px;
+    
+}
 
-            <div class="name">
 
-             <h3>Starbucks® House Blend</h3>
+li{
+    margin-left:  100px;
+    list-style:none;
+}
 
-                <img src="https://www.starbucksathome.com/br/media/catalog/product/cache/b90b8b710d5a319a644d2039872a6859/m/i/microsoftteams-image_6_.png">
+
+h1{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.input{
+
+text-align: center;
+margin-top: 20px;
+}
+
+
+a{
+padding: 5px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid #036635;
+    background-color: #fff;
+    color: #036635;
+    border-radius: 400px;
+}
+
+input{
+    width: 280px;
+    height: 30px;
+    
+}
+
+.button{
+    width:150px ;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 3px solid #036635;
+    color: #036635;
+    font-weight: bold;
+    margin-bottom: 80px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 1px black;
+
+}
+
+.conteudo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 55px;
+    
+}
+
+.grid{display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#text{
+    width: 50%;
     
 
-        </div>
-      
+}
 
-            <div class="descricao">
+#cafe{
+    width: 100px;
+    margin-right: 100px;
+   
+}
 
-                <ol>
+iframe{
+border-color: #036635 #fff;
+border-style:groove;
+padding: 5px;
+}
 
-                    <li>Torrado Moído | Torra Média
-                        
-                    </li>
+
+h2{
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#all{
+    display:flex; 
+    flex-direction: row;
+    justify-content: center;
+
+}
+#tudao{
+    max-width: 100%;
+    display: flex;
+}
+
+container{
+    display: flex;
+    justify-content: center ;
+}
+
+.produtos{
+    width: 300px;
+    border: 3px solid #036635;
+    margin-left: 20px;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 5px black;
+}
 
 
-                </ol>
 
-            </div>
+ .button1{
+    font-weight: bold;
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    color: #036635;
+    border: 3px solid #036635;
+    background-color: #fff   
 
-         <div class="comprar">
+}
 
-            </div class="button1">
+.button1:hover {
+    background-color: #3e8e41;
+    color: white;
+    transition: 1s;
 
-              <a href="#" class="button1">Comprar</a>
-              <div class="preco">
+}   
 
-                <p class="preco" ><span>$ 29,39</span>
-                    R$ 22,04</p>
+.button:hover {
+    background-color: #3e8e41;
+    color: white;
+    transition: 1s;
 
-            </div>
-              
+}   
 
-          </div>
 
-        </div>
+a.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
 
-        </div>
 
-    </div>
 
-    <div id="conteiner">
+.name{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    color: #036635 ;
+    border: 3px solid #036635;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+ img{
+    width: 200px;
+ }
 
-        <div class ="produtos">
+.preco{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #036635;
+    margin-top: 10px;
+   
+}
 
-            <div class="name">
+span{
+    text-decoration: line-through;
+    
+}
 
-             <h3>Starbucks® Pike Place®</h3>
 
-                <img src="https://www.starbucksathome.com/br/media/catalog/product/cache/b90b8b710d5a319a644d2039872a6859/p/i/pike-place-1772x1772.png">
+
+li{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border-top: 5px solid #113911;
+    border-left: 2px solid #113911;
+    border-right: 2px solid black;
+    color: #036635;
+
+}
+
+.ol-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+h5{
+    text-align: end;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+
+
+
+
+h1, h2, h4{
+    color: #FFF;
+}
+
+p{
+    color: #FFF;
+}
+
+@media screen and (min-width: 320px) and (max-width:1000px) {
+   container{
+    flex-direction: column;
+   }
+    #conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
     
 
-        </div>
-      
-
-            <div class="descricao">
-
-                <ol>
-
-                    <li>Torrado Moído | Torra Média</li>
-
-
-                </ol>
-
-            </div>
-
-         <div class="comprar">
-
-            </div class="button1">
-
-              <a href="#" class="button1">Comprar</a>
-              <div class="preco">
-
-                <p class="preco" ><span>$ 29,39</span>
-                    R$ 22,04</p>
-
-            </div>
-              
-
-          </div>
-
-        </div>
-
-        </div>
-
-    </div>
-
- </div>
-
-</div>
-
-
- <footer class="footer">
-
-
-
-    <ol class="ol-footer">
-
-        <li class="li-footer"><a href="#">Privacy</a></li>
-
-        <li class="li-footer"><a href="#">Terms</a></li>
-
-        <li class="li-footer"><a href="#">Contact</a></li>
-
-    </ol>
-
-    <h5>Copyright 2023, Starbucks</h5>
-
- </footer>
-
-</div>
-
- </div>
-
-</div>
-
-
+    footer{
+       width: 100%;
+       margin-left: 0;
     
+    }
 
+iframe{
+    width: 360px;
+}
 
-     </main>
-    
-</body>
+header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 90px;
 
-</html>
+    }
+    a{
+        border: 1px solid #036635;
+    }
+
+    .logo1{
+        margin-left: 100px;
+
+    }
+
+    ul {
+        display: flex;
+        margin-right: 70px;
+        flex-direction: column;
+    }
+    li{
+        margin-bottom: 9px;
+        font-size: 14px;
+    }
+.grid{
+    width: 94%;
+}
+.icon{ width: 102px;}
+}
